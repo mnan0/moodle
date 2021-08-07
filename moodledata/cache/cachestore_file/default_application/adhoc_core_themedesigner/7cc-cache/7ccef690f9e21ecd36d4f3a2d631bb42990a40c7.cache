@@ -1,0 +1,11 @@
+a:2:{s:4:"data";s:287:"/** Path: plugin atto_emojipicker .' **/
+.emoji-picker-dialogue.moodle-dialogue-base .moodle-dialogue .moodle-dialogue-bd {
+    padding: 0;
+}
+
+.emoji-picker-dialogue .emoji-picker {
+    box-shadow: none !important; /* stylelint-disable-line declaration-no-important */
+    border: 0;
+}
+
+";s:7:"created";i:1628355683;}

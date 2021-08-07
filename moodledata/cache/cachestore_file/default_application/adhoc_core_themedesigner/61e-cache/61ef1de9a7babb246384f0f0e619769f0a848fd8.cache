@@ -1,0 +1,7 @@
+a:2:{s:4:"data";s:120:"/** Path: plugin paygw_paypal .' **/
+.core_payment_gateways_modal .paypal .icon {
+    height: 40px;
+    width: auto;
+}
+
+";s:7:"created";i:1628355682;}
