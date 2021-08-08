@@ -3,7 +3,7 @@
 // plugin version
 $plugin->version = 2021072801;
 // plugin requires this moodle version (found in version.php in source folder)
-$plugin->requires = 2021072800;
+$plugin->requires = 2021051701;
 // plugin name (must be same as container folder, if not local plugin, use plugin type)
 $plugin->component = 'local_staffmanager';
 //$plugin->cron = 0;
