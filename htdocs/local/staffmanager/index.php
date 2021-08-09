@@ -27,4 +27,6 @@ echo $OUTPUT->header();
 // include the template between the header and footer (notice the filepath style, don't need extension)
 // notice the data array is empty, can be filled and sent to the template to be used
 echo $OUTPUT->render_from_template("local_staffmanager/searchbar",[]);
+echo $OUTPUT->render_from_template("local_staffmanager/searchresults",[]);
+
 echo $OUTPUT->footer();

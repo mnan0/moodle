@@ -1,0 +1,32 @@
+<div class="card">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th></th>
+                <th>Email</th>
+                <th>Grades marked</th>
+                <th>Value</th>
+                <th></th>
+            </tr>
+        </thead>
+{{! notice the opening and closing data tags. depending on the data submitted to the template, the contents of the data will
+repeat and fill with each data object (i.e. one row/tr per data point) }}
+        {{#data}}
+        <tr>
+            <td>{{{firstname}}}</td>
+            <td>{{{lastname}}}</td>
+            <td>{{{email}}}</td>
+            <td>{{gradescounts}}</td>
+            <td>${{totalvalue}}</td>
+            <td></td>
+        </tr>
+        {{/data}}
+    </table>
+{{! notice this kind of opening and closing data tag (different from the first one!). if no data is given, generate this instead}}
+    {{^data}}
+    <div class="card-body">
+        <p>There are no results.</p>
+        {{/data}}
+    </div>
+</div>
