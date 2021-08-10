@@ -11,6 +11,7 @@ global $USER, $DB, $CFG; // useful global variables
 
 $PAGE->set_url('/local/staffmanager/index.php');
 $PAGE->set_context(context_system::instance());
+$PAGE->requires->js("/local/staffmanager/assets/staffmanager.js");
 
 require_login(); // require certain permissions before viewing this page
 
