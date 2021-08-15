@@ -24,6 +24,6 @@ $results->data = array_values($rates);
 
 echo $OUTPUT->header();
 
-echo $OUTPUT->render_from_template("local_staffmanager/rates",$results);
+echo $OUTPUT->render_from_template("local_staffmanager/rates",$results);     
 
 echo $OUTPUT->footer();
