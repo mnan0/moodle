@@ -4,8 +4,8 @@
 require_once("../../config.php");
 global $USER, $DB, $CFG;
 
-$page->set_url("local/staffmanager/rates.php");
-$page->set_context("context_system::instance()");
+$PAGE->set_url('/local/staffmanager/rates.php');
+$PAGE->set_context("context_system::instance()");
 
 require_login();
 
