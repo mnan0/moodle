@@ -5,7 +5,7 @@ require_once("../../config.php");
 global $USER, $DB, $CFG;
 
 $PAGE->set_url('/local/staffmanager/rates.php');
-$PAGE->set_context("context_system::instance()");
+$PAGE->set_context(context_system::instance());
 
 require_login();
 
@@ -17,7 +17,7 @@ $PAGE->set_heading($strpageheading);
 
 // get array of objects (representation of the table local_staffmanager_rates) with no conditions and ordered: year descending
 // and month ascending
-$rates = $DB->get_records("local_staffmanager_rates",null,'year DESC month ASC');
+$rates = $DB->get_records("local_staffmanager_rates",null,"year DESC, month ASC");
 
 $results = new stdClass();
 $results->data = array_values($rates);
