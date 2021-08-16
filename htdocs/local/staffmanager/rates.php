@@ -19,6 +19,11 @@ $PAGE->set_heading($strpageheading);
 // and month ascending
 $rates = $DB->get_records("local_staffmanager_rates",null,"year DESC, month ASC");
 
+foreach ($rates as $key => $value){
+    // convert month to string
+    $rates[$key]->monthname = date("F",mktime(0,0,0,$rates[$key]->month,10));
+}
+
 $results = new stdClass();
 $results->data = array_values($rates);
 

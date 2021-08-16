@@ -18,6 +18,10 @@ require_login(); // require certain permissions before viewing this page
 // get the month and year parameters from the url to be passed to the template
 $month = optional_param("month","",PARAM_TEXT);
 $year = optional_param("year", "", PARAM_TEXT);
+if ($month==="" && $year ===""){
+    $month = 1;
+    $year = 2020;
+}
 $obj = new stdClass();
 $obj->month = (int)$month;
 $obj->year = (int)$year;
